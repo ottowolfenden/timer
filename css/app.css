@@ -1,0 +1,140 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#minutesInputBox {
+    width: auto;
+    background-color: black;
+    color: #ffffff;
+    font-size: calc(var(--correct-size) / 2.5);
+    outline: none;
+    border: none;
+    text-align: center;
+    appearance: textfield;
+    margin: 0;
+}
+#minutesInputBox:focus {
+    color: #89ddff;
+    outline: none;
+    border: none;
+    appearance: textfield;
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+#minutesInputDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+}
+
+#startTimerButton {
+    color: #c3e88d;
+    font-size: 2.5em;
+    border: none;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+}
+#startTimerButton:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+#resetTimerButton {
+    color: #f07178;
+    font-size: 2.5em;
+    border: none;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 525%);
+}
+#resetTimerButton:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+
+/* radial progress bar */
+
+.progress {
+    display: flex;
+    width: var(--correct-size);
+    height: var(--correct-size);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: calc(infinity * 1px);
+
+    background: conic-gradient(white calc(var(--progress) * 1%), transparent calc(var(--progress) * 1%));
+}
+.progress:hover {
+    cursor: pointer;
+}
+
+
+.progress .number {
+    background: black;
+    font-size: calc(var(--correct-size) / 2.5);
+
+    width: calc(var(--correct-size) - (var(--correct-size) / 16));
+    height: calc(var(--correct-size) - (var(--correct-size) / 16));
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+
+
+/* get screen width and height variables */
+@property --_w {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 100vw; 
+}
+@property --_h {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 100vh; 
+}
+:root {
+  --screen-width: tan(atan2(var(--_w),1px)); 
+  --screen-height: tan(atan2(var(--_h),1px));
+  --correct-size: calc((min(var(--screen-width), var(--screen-height)) * 1px) / 1.5)
+}
