@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "Anki Timer",
   "resources": {
-    "hash": "sha256-dVN6YT0xgZE+QQp1sO5pXMU5gerkCqSS0XEwtwCOHYY=",
+    "hash": "sha256-9R6EXrdkoUnKFdiDIjiZeL5gmDeBWDoJ9OqJgixoATA=",
     "fingerprinting": {
-      "Anki Timer.tky6bghvk0.wasm": "Anki Timer.wasm",
+      "Anki Timer.q8gwh9zrr7.wasm": "Anki Timer.wasm",
       "BlazorBootstrap.ym6tnrklwx.wasm": "BlazorBootstrap.wasm",
       "Microsoft.AspNetCore.Components.Forms.c3g4sc1mk8.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.leiw45joy5.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -76,7 +76,7 @@
       "System.Runtime.InteropServices.JavaScript.h0o384gvzn.wasm": "sha256-rwtckCDh2hrAqX7g10ShSPlmBHiMU4i3ALHrPCgasio="
     },
     "assembly": {
-      "Anki Timer.tky6bghvk0.wasm": "sha256-cxBZXq8NBhTLzYfTpNv8Y1e3zPrIPZXvjLT03ylRWKE=",
+      "Anki Timer.q8gwh9zrr7.wasm": "sha256-xoBuJhVRATnQgjvcVvh1NdLX7TE+4OeO22+62gsZh+U=",
       "BlazorBootstrap.ym6tnrklwx.wasm": "sha256-JvZh7RjGQpT7CC6gfoLZbKPPkhcor/rhKKpkCt/2lfU=",
       "Microsoft.AspNetCore.Components.Forms.c3g4sc1mk8.wasm": "sha256-eAbNW/FAGvEOaj3WYb2pEVbFiypCGzRa4r6vEMyDVoQ=",
       "Microsoft.AspNetCore.Components.leiw45joy5.wasm": "sha256-LQ2dW6VtPocwiIytHFBU2mFgaR6xSChHp0tI5VPj3qg=",
